@@ -87,7 +87,7 @@ function ResultsRow({ raceid, driver }) {
     return intLaps > -1;
   };
 
-  let isEnableButton = (validLaps(form.laps) && validTime(form.time));
+  let isEnableButton = validLaps(form.laps);
 
   return (
     <tr>
