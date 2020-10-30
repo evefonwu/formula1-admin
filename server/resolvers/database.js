@@ -117,7 +117,7 @@ async function activeDrivers(_, { obj }) {
  * rows in results table in a single transaction
  * 
  * Example: insert into f1admin.results(raceid, driverid)
- *          values (1,1), (1,2), (1,3), (1, 4), (1, 5)
+ *          values (1,1), (1,2), (1,3), (1,4), (1,5)
  */
 
 // Output string: (1,1),
@@ -125,7 +125,7 @@ function nextValue(raceid, driverid) {
   return `(${raceid}, ${driverid}),`;
 }
 
-// Output string: (1,1), (1,2), (1,3), (1, 4), (1, 5)
+// Output string: (1,1), (1,2), (1,3), (1,4), (1,5)
 function buildValues(raceid, driveridlist) {
   let length = driveridlist.length;
   let values = "";
